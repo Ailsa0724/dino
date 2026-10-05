@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7eb">
+    <title>Pixel Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <p class="eyebrow">A LITTLE PIXEL ADVENTURE</p>
+        <h1>Pixel Runner</h1>
+        <p class="intro">跳過障礙，看看你能跑多遠。</p>
+      </header>
+
+      <section class="game-card" aria-label="Pixel Runner 遊戲">
+        <div class="canvas-wrap">
+          <canvas
+            id="game-canvas"
+            width="960"
+            height="360"
+            aria-label="Pixel Runner 遊戲畫面。按空白鍵、向上鍵或點擊畫面跳躍。"
+            role="img"
+          >
+            您的瀏覽器不支援 HTML Canvas，請更新瀏覽器後再試。
+          </canvas>
+        </div>
+
+        <div class="game-controls">
+          <p id="game-status" class="game-status" aria-live="polite">
+            按 Space 或點擊畫面開始
+          </p>
+          <div class="button-group">
+            <button id="start-button" class="button button-primary" type="button">
+              開始遊戲
+            </button>
+            <button id="pause-button" class="button button-secondary" type="button" disabled>
+              暫停
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="help">
+        <span><kbd>SPACE</kbd> / <kbd>↑</kbd> 跳躍</span>
+        <span><kbd>P</kbd> 暫停</span>
+        <span><kbd>ENTER</kbd> 重新開始</span>
+        <span>手機可點擊畫面操作</span>
+      </footer>
+    </main>
+  </body>
+</html>
